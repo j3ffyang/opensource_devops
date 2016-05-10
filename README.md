@@ -40,3 +40,4 @@ I just want to describe my thoughts of how a spirit is driving me to believe in 
 <img src="img/stackalytics.png">
 
 * StackOverflow.com –
+<img src="img/stackoverflow.png">
