@@ -3,7 +3,15 @@
 Disclaimer: the content in this document was collected from my personal idea and information from open source community, specially Hyperledger at Github.com and Linux Foundations.
 
 # 目录    
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
 
+- [OpenSource and DevOps](#opensource-and-devops)
+- [目录](#目录)
+	- [1. 哲学](#1-哲学)
+	- [2. 让世界都成为你的团队（汇集世界的力量）](#2-让世界都成为你的团队汇集世界的力量)
+	- [3. 软件设计的艺术（API经济）](#3-软件设计的艺术api经济)
+
+<!-- /TOC -->
 
 ## 1. 哲学
 ## 2. 让世界都成为你的团队（汇集世界的力量）
