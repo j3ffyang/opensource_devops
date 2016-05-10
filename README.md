@@ -11,6 +11,10 @@ Disclaimer: the content in this document was collected from my personal idea and
 	- [1. 哲学](#1-哲学)
 	- [2. 让世界都成为你的团队（汇集世界的力量）](#2-让世界都成为你的团队汇集世界的力量)
 	- [3. 软件设计的艺术（API经济）](#3-软件设计的艺术api经济)
+		- [3.1. Github.com](#31-githubcom)
+		- [3.2. Slack.com](#32-slackcom)
+		- [3.3. Gerrit和Stackalytics.com](#33-gerrit和stackalyticscom)
+		- [3.4. StackOverflow.com –](#34-stackoverflowcom-)
 
 <!-- /TOC -->
 
@@ -25,19 +29,23 @@ I just want to describe my thoughts of how a spirit is driving me to believe in 
 <img src="img/lnx_foundation_mbrs.png">
 
 ## 3. 软件设计的艺术（API经济）
-* Github.com – 用于代码版本控制(version control)，并且多团队的合作开发平台。仅仅区块链就有1300+个项目(截至2016年5月)
+### 3.1. Github.com
+
+* 用于代码版本控制(version control)，并且多团队的合作开发平台。仅仅区块链就有1300+个项目(截至2016年5月)
 
 <img src="img/github_bc.png">
 
-<img src="img/gitlab_chaincode_sample.png"
+* 我们自己的代码
+<img src="img/gitlab_chaincode_sample.png">
 
-在Hyperledger Project之中
+* 在Hyperledger Project之中
 <img src="img/github_bc_workload.png">
 
-* Slack.com – 团队协作沟通平台(channel, direct message, file upload/ share, notif, and integration)
+### 3.2. Slack.com
+团队协作沟通平台(channel, direct message, file upload/ share, notif, and integration)
 
-* Gerrit和Stackalytics.com
+### 3.3. Gerrit和Stackalytics.com
 <img src="img/stackalytics.png">
 
-* StackOverflow.com –
+### 3.4. StackOverflow.com –
 <img src="img/stackoverflow.png">
