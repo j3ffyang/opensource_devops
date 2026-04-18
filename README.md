@@ -1,51 +1,154 @@
-# OpenSource and DevOps
+# DevOps Handbook
 
-Disclaimer: the content in this document was collected from my personal idea and information from open source community, specially Hyperledger at Github.com and Linux Foundations.
+A comprehensive, bilingual guide to DevOps practices, tools, culture, and infrastructure. This handbook covers everything from open-source philosophy to containerization, CI/CD pipelines, infrastructure as code, and modern DevSecOps practices.
 
-# 目录    
-<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+**Available in English & Chinese (中文)**
 
-- [OpenSource and DevOps](#opensource-and-devops)
-- [目录](#目录)
-	- [0. 文档目标](#0-文档目标)
-	- [1. 哲学](#1-哲学)
-	- [2. 让世界都成为你的团队（汇集世界的力量）](#2-让世界都成为你的团队汇集世界的力量)
-	- [3. 软件设计的艺术（API经济）](#3-软件设计的艺术api经济)
-		- [3.1. Github.com](#31-githubcom)
-		- [3.2. Slack.com](#32-slackcom)
-		- [3.3. Gerrit和Stackalytics.com](#33-gerrit和stackalyticscom)
-		- [3.4. StackOverflow.com –](#34-stackoverflowcom-)
+## Quick Start
 
-<!-- /TOC -->
+### Installation
 
-## 0. 文档目标
-I just want to describe my thoughts of how a spirit is driving me to believe in #OpenSource
+```bash
+cd opensource_devops
+pnpm install
+```
 
-## 1. 哲学
-## 2. 让世界都成为你的团队（汇集世界的力量）
-* Linux – 开源软件和创新的根基
-* HyperLedger项目所在的Linux Foundation - 全球180+企业加入
+### Run Development Server
 
-<img src="img/lnx_foundation_mbrs.png">
+```bash
+pnpm run docs:dev
+```
 
-## 3. 软件设计的艺术（API经济）
-### 3.1. Github.com
+Visit `http://localhost:5173` in your browser.
 
-* 用于代码版本控制(version control)，并且多团队的合作开发平台。仅仅区块链就有1300+个项目(截至2016年5月)
+### Build for Production
 
-<img src="img/github_bc.png">
+```bash
+pnpm run docs:build
+```
 
-* 我们自己的代码
-<img src="img/gitlab_chaincode_sample.png">
+The static site will be generated in the `.vitepress/dist` directory.
 
-* 在Hyperledger Project之中
-<img src="img/github_bc_workload.png">
+### Preview Production Build
 
-### 3.2. Slack.com
-团队协作沟通平台(channel, direct message, file upload/ share, notif, and integration)
+```bash
+pnpm run docs:preview
+```
 
-### 3.3. Gerrit和Stackalytics.com
-<img src="img/stackalytics.png">
+## Table of Contents
 
-### 3.4. StackOverflow.com –
-<img src="img/stackoverflow.png">
+### Philosophy & Mindset
+- Open source culture and community
+- DevOps principles and transformation
+- Team collaboration and communication
+
+### Tools & Platforms
+- **Version Control**: Git workflows, GitHub, branching strategies
+- **Collaboration**: Slack, GitHub Issues, project management
+- **CI/CD**: GitHub Actions, Jenkins, GitLab CI
+- **Containers**: Docker, image best practices, registries
+- **Monitoring**: Prometheus, Grafana, observability
+
+### Infrastructure
+- **Infrastructure as Code**: Terraform, Ansible, CloudFormation
+- **Kubernetes**: Concepts, deployments, networking, scaling
+- **Cloud Platforms**: AWS, GCP, Azure, multi-cloud strategies
+
+### Security
+- **DevSecOps**: Shift-left security, SAST, DAST, secrets management
+- **Container Security**: Image scanning, runtime security
+- **Compliance**: CIS benchmarks, audit logging
+
+## Content Structure
+
+```
+.
+├── en/                    # English content
+│   ├── index.md          # Home page
+│   ├── philosophy.md     # Open source mindset
+│   └── tools/
+│       ├── version-control.md
+│       ├── collaboration.md
+│       ├── cicd.md
+│       ├── containers.md
+│       └── monitoring.md
+│   └── infrastructure/
+│       ├── iac.md
+│       ├── kubernetes.md
+│       └── cloud.md
+│   └── security/
+│       └── devsecops.md
+├── zh/                    # Chinese (Simplified) content
+│   ├── index.md
+│   └── [same structure as en/]
+├── .vitepress/
+│   └── config.ts         # VitePress configuration with i18n
+├── package.json
+└── img/                  # Images and assets
+```
+
+## Language Toggle
+
+A language switcher is automatically available in the top navigation bar. Click the language option to switch between English and Chinese (中文).
+
+## Features
+
+✅ **Bilingual Support** - Complete English and Chinese content with language switcher
+✅ **Modern Documentation** - Built with VitePress for fast, beautiful documentation
+✅ **Comprehensive Coverage** - 10 detailed sections covering modern DevOps
+✅ **Practical Examples** - Real-world code examples and configurations
+✅ **Best Practices** - Industry-standard patterns and recommendations
+✅ **Version Controlled** - All content stored in Git for easy collaboration
+✅ **Responsive Design** - Works on desktop, tablet, and mobile devices
+
+## Development
+
+### Adding Content
+
+1. Create a new markdown file in the appropriate language directory
+2. Update `.vitepress/config.ts` to add the new page to navigation
+3. Use markdown syntax with code blocks, tables, and formatting
+
+### Editing Existing Pages
+
+Simply edit the corresponding `.md` file in the `en/` or `zh/` directory and save. Changes will hot-reload in development mode.
+
+### Building & Deployment
+
+To generate a static HTML site for hosting:
+
+```bash
+pnpm run docs:build
+```
+
+The output will be in `.vitepress/dist/` ready for deployment to GitHub Pages, Netlify, Vercel, or any static hosting service.
+
+## Technology Stack
+
+- **VitePress**: Modern, fast documentation site generator
+- **Vue 3**: Reactive UI components
+- **Markdown**: Simple, version-controllable content format
+- **i18n**: Built-in internationalization support
+
+## Contribution
+
+This handbook is maintained as an open-source project. Contributions are welcome!
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your improvements
+4. Submit a pull request
+
+## License
+
+This project is open source and available under the MIT License.
+
+## Author
+
+Created as a comprehensive DevOps knowledge base combining best practices from the open-source community, Linux Foundation, and industry standards.
+
+---
+
+**Start reading**: Visit the [English version](/en/) or [中文版本](/zh/)
+
+**Questions?** Check individual section READMEs or submit an issue on GitHub.
