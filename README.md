@@ -1,154 +1,143 @@
 # DevOps Handbook
 
-A comprehensive, bilingual guide to DevOps practices, tools, culture, and infrastructure. This handbook covers everything from open-source philosophy to containerization, CI/CD pipelines, infrastructure as code, and modern DevSecOps practices.
+A comprehensive, open-source guide to modern DevOps practices, tools, culture, and infrastructure.
 
-**Available in English & Chinese (中文)**
-
-## Quick Start
-
-### Installation
-
-```bash
-cd opensource_devops
-pnpm install
-```
-
-### Run Development Server
-
-```bash
-pnpm run docs:dev
-```
-
-Visit `http://localhost:5173` in your browser.
-
-### Build for Production
-
-```bash
-pnpm run docs:build
-```
-
-The static site will be generated in the `.vitepress/dist` directory.
-
-### Preview Production Build
-
-```bash
-pnpm run docs:preview
-```
-
-## Table of Contents
-
-### Philosophy & Mindset
-- Open source culture and community
-- DevOps principles and transformation
-- Team collaboration and communication
-
-### Tools & Platforms
-- **Version Control**: Git workflows, GitHub, branching strategies
-- **Collaboration**: Slack, GitHub Issues, project management
-- **CI/CD**: GitHub Actions, Jenkins, GitLab CI
-- **Containers**: Docker, image best practices, registries
-- **Monitoring**: Prometheus, Grafana, observability
-
-### Infrastructure
-- **Infrastructure as Code**: Terraform, Ansible, CloudFormation
-- **Kubernetes**: Concepts, deployments, networking, scaling
-- **Cloud Platforms**: AWS, GCP, Azure, multi-cloud strategies
-
-### Security
-- **DevSecOps**: Shift-left security, SAST, DAST, secrets management
-- **Container Security**: Image scanning, runtime security
-- **Compliance**: CIS benchmarks, audit logging
-
-## Content Structure
-
-```
-.
-├── en/                    # English content
-│   ├── index.md          # Home page
-│   ├── philosophy.md     # Open source mindset
-│   └── tools/
-│       ├── version-control.md
-│       ├── collaboration.md
-│       ├── cicd.md
-│       ├── containers.md
-│       └── monitoring.md
-│   └── infrastructure/
-│       ├── iac.md
-│       ├── kubernetes.md
-│       └── cloud.md
-│   └── security/
-│       └── devsecops.md
-├── zh/                    # Chinese (Simplified) content
-│   ├── index.md
-│   └── [same structure as en/]
-├── .vitepress/
-│   └── config.ts         # VitePress configuration with i18n
-├── package.json
-└── img/                  # Images and assets
-```
-
-## Language Toggle
-
-A language switcher is automatically available in the top navigation bar. Click the language option to switch between English and Chinese (中文).
-
-## Features
-
-✅ **Bilingual Support** - Complete English and Chinese content with language switcher
-✅ **Modern Documentation** - Built with VitePress for fast, beautiful documentation
-✅ **Comprehensive Coverage** - 10 detailed sections covering modern DevOps
-✅ **Practical Examples** - Real-world code examples and configurations
-✅ **Best Practices** - Industry-standard patterns and recommendations
-✅ **Version Controlled** - All content stored in Git for easy collaboration
-✅ **Responsive Design** - Works on desktop, tablet, and mobile devices
-
-## Development
-
-### Adding Content
-
-1. Create a new markdown file in the appropriate language directory
-2. Update `.vitepress/config.ts` to add the new page to navigation
-3. Use markdown syntax with code blocks, tables, and formatting
-
-### Editing Existing Pages
-
-Simply edit the corresponding `.md` file in the `en/` or `zh/` directory and save. Changes will hot-reload in development mode.
-
-### Building & Deployment
-
-To generate a static HTML site for hosting:
-
-```bash
-pnpm run docs:build
-```
-
-The output will be in `.vitepress/dist/` ready for deployment to GitHub Pages, Netlify, Vercel, or any static hosting service.
-
-## Technology Stack
-
-- **VitePress**: Modern, fast documentation site generator
-- **Vue 3**: Reactive UI components
-- **Markdown**: Simple, version-controllable content format
-- **i18n**: Built-in internationalization support
-
-## Contribution
-
-This handbook is maintained as an open-source project. Contributions are welcome!
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your improvements
-4. Submit a pull request
-
-## License
-
-This project is open source and available under the MIT License.
-
-## Author
-
-Created as a comprehensive DevOps knowledge base combining best practices from the open-source community, Linux Foundation, and industry standards.
+**Available in:** [English](en/README.md) | [中文 (Chinese Simplified)](zh/README.md)
 
 ---
 
-**Start reading**: Visit the [English version](/en/) or [中文版本](/zh/)
+## 📚 What's Inside
 
-**Questions?** Check individual section READMEs or submit an issue on GitHub.
+This handbook covers:
+
+- **Philosophy & Culture** - Open source mindset, DevOps principles, team collaboration
+- **Tools & Platforms** - Version control, CI/CD, collaboration, containers, monitoring
+- **Infrastructure** - IaC (Terraform, Ansible), Kubernetes, cloud platforms (AWS, GCP, Azure)
+- **Security** - DevSecOps, shift-left security, SAST/DAST, compliance frameworks
+
+Each section includes practical examples, best practices, and real-world configurations.
+
+---
+
+## 🚀 Quick Start
+
+Choose your language and start reading:
+
+### English
+```
+en/
+├── README.md (start here)
+├── philosophy.md
+├── tools/
+│   ├── version-control.md
+│   ├── collaboration.md
+│   ├── cicd.md
+│   ├── containers.md
+│   └── monitoring.md
+├── infrastructure/
+│   ├── iac.md
+│   ├── kubernetes.md
+│   └── cloud.md
+└── security/
+    └── devsecops.md
+```
+
+**👉 [Read in English](en/README.md)**
+
+### 中文 (Chinese)
+```
+zh/
+├── README.md (从这里开始)
+├── philosophy.md
+├── tools/
+│   ├── version-control.md
+│   ├── collaboration.md
+│   ├── cicd.md
+│   ├── containers.md
+│   └── monitoring.md
+├── infrastructure/
+│   ├── iac.md
+│   ├── kubernetes.md
+│   └── cloud.md
+└── security/
+    └── devsecops.md
+```
+
+**👉 [中文阅读](zh/README.md)**
+
+---
+
+## 📖 Features
+
+✅ **Comprehensive Coverage** - 10 detailed sections on modern DevOps  
+✅ **Bilingual** - Full English and Chinese content  
+✅ **Practical** - Real code examples, configurations, workflows  
+✅ **Best Practices** - Industry standards and proven patterns  
+✅ **GitHub Native** - Markdown files, directly viewable on GitHub  
+✅ **Easy to Contribute** - Simple structure, no build required  
+
+---
+
+## 📝 Content Overview
+
+### Philosophy & Culture
+Understanding DevOps mindset, breaking silos, and building collaborative teams
+
+### Version Control
+Git workflows, GitHub collaboration, branching strategies, code review best practices
+
+### Collaboration Tools
+Slack, GitHub Issues, project management, incident response, knowledge sharing
+
+### CI/CD Pipelines
+GitHub Actions, Jenkins, GitLab CI, deployment strategies, automated testing
+
+### Containerization
+Docker basics, image best practices, registries, security, container runtimes
+
+### Monitoring & Observability
+Prometheus, Grafana, ELK Stack, SLOs, distributed tracing, incident response
+
+### Infrastructure as Code
+Terraform, Ansible, CloudFormation, GitOps, state management, best practices
+
+### Kubernetes
+Deployments, services, scaling, networking, storage, troubleshooting
+
+### Cloud Platforms
+AWS, GCP, Azure, multi-cloud strategies, disaster recovery, cost optimization
+
+### DevSecOps & Security
+Shift-left security, SAST/DAST, container scanning, secrets management, compliance
+
+---
+
+## 🤝 Contributing
+
+This is an open-source handbook. Contributions are welcome!
+
+1. Fork the repository
+2. Edit the markdown files directly
+3. Submit a pull request
+
+No build process needed - just edit the markdown files and they'll be viewable on GitHub.
+
+---
+
+## 📄 License
+
+Open source - see LICENSE file for details.
+
+---
+
+## 👤 About
+
+Created as a comprehensive DevOps knowledge base combining best practices from the open-source community, Linux Foundation standards, and industry expertise.
+
+**Maintained by:** [j3ffyang](https://github.com/j3ffyang)
+
+---
+
+**Start reading:**
+- 🇬🇧 [English Version](en/README.md)
+- 🇨🇳 [中文版本](zh/README.md)
